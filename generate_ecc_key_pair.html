@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Generate your ECC Key Pair</title>
+        <link rel="stylesheet" href="generate.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PGP: Generate an ECC Key Pair/Generation">
+        <meta name="author" content="Anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>ECC Key Pair Generation</h1>
+
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email">
+
+            <label for="expiry">Expiry Duration <span class="required">*</span></label>
+            <select id="expiry" name="expiry" required>
+                <option value="" disabled selected>Select expiry duration</option>
+                <option value="0">Never</option>
+                <option value="31536000">One year</option>
+                <option value="63072000">Two years</option>
+                <option value="94608000">Three years</option>
+                <option value="126144000">Four years</option>
+                <option value="157680000">Five years</option>
+                <option value="189216000">Six years</option>
+                <option value="220752000">Seven years</option>
+                <option value="252288000">Eight years</option>
+            </select>
+
+            <label for="passphrase">Passphrase <span class="required">*</span></label>
+            <input type="password" id="passphrase" name="passphrase" required>
+
+            <button type="button" id="generateKeyButton">Generate your ECC Key Pair</button>
+            <br id="break" class="hidden">
+            <p id="paragraph" class="hidden">Make sure to fill out all required (*) fields.</p>
+            <p id="error" class="hidden"></p>
+            <p id="processUnderWay" class="hidden">The process is under way...</p>
+        </div>
+
+        <script type="module" src="./openpgp/dist/openpgp.min.mjs"></script>
+        <script type="module" src="generate_ecc_key_pair.js"></script>
+    </body>
+</html>

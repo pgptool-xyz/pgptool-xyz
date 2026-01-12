@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Key Information Retrieval</title>
+        <link rel="stylesheet" href="retrieve_key_information.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PGP: Retrieve Key Information/Retrieval">
+        <meta name="author" content="Anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Key Information Retrieval</h1>
+            <label for="publicKeyArmmored">Public Key/Private Key <span class="required">*</span></label>
+            <textarea id="publicKeyArmored" rows="10" cols="50" required></textarea><br><br>
+
+            <button id="retrievalButton">Retrieve Key Information</button>
+            <br id="break" class="hidden">
+            <p id="paragraph" class="hidden">Make sure to provide the public key.</p>
+            <p id="error" class="hidden"></p>
+
+            <h2>Key Information Provision</h2>
+            <textarea id="output" rows="10" cols="50" readonly>
+Algorithm:
+Bits/Curve:
+Creation Time:
+Expiration Time:
+Fingerprint:
+(last eight characters: )
+User ID:
+            </textarea>
+        </div>
+        <script type="module" src="./openpgp/dist/openpgp.min.mjs"></script>
+        <script type="module" src="retrieve_key_information.js"></script>
+    </body>
+</html>

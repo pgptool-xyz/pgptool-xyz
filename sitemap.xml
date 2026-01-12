@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.pgptool.xyz</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/generate_rsa_key_pair.html</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/generate_ecc_key_pair.html</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/encrypt.html</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/decrypt.html</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/sign.html</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/verify.html</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/revoke_a_key.html</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/retrieve_key_information.html"</loc>
+    </url>
+    <url>
+        <loc>https://www.pgptool.xyz/publickey.pgptool.xyz@protonmail.com-62d5694ee76cd04c5e2d91e3254484b519e2f911.asc</loc>
+    </url>
+</urlset>

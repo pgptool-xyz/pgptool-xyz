@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PGP Tool</title>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PGP: Generate RSA And ECC Keys/Generation, Encrypt/Encryption, Decrypt/Decryption, Sign/Signing, Verify/Verification">
+        <meta name="author" content="Anonymous">
+    </head>
+    <body>
+        <div class="js-enabled">
+            <div id="navPortrait" class="hidden">
+                <button id="navClosureButton">Close Menu</button>
+                <div id="redirect1_" class="navItem">Generate RSA Key Pair</div>
+                <div id="redirect2_" class="navItem">Generate ECC Key Pair</div>
+                <div id="redirect3_" class="navItem">Encrypt ( + Sign )</div>
+                <div id="redirect4_" class="navItem">Decrypt ( + Verify )</div>
+                <div id="redirect5_" class="navItem">Sign</div>
+                <div id="redirect6_" class="navItem">Verify</div>
+                <div id="redirect7_" class="navItem">Revoke A Key</div>
+                <div id="redirect8_" class="navItem">Retrieve Key Information</div>
+            </div>
+            <div id="noNavPortrait">
+                <div class="navLandscape">
+                    <div id="redirect1" class="navItem">Generate RSA Key Pair</div>
+                    <div id="redirect2" class="navItem">Generate ECC Key Pair</div>
+                    <div id="redirect3" class="navItem">Encrypt ( + Sign )</div>
+                    <div id="redirect4" class="navItem">Decrypt ( + Verify )</div>
+                    <div id="redirect5" class="navItem">Sign</div>
+                    <div id="redirect6" class="navItem">Verify</div>
+                    <div id="redirect7" class="navItem">Revoke A Key</div>
+                    <div id="redirect8" class="navItem">Retrieve Key Information</div>
+                </div>
+                <div class="navPortraitButton">
+                    <button id="navOpeningButton">Open Menu</button>
+                </div>
+                <div class="body">
+                    <h1>PGP Tool (Client-Side)</h1>
+                    <p>Generate PGP keys, encrypt, decrypt, sign, and verify messages simply and securely.</p>
+                    <div class="tagline">
+                        <div class="phrase">Protecting Human Rights</div>
+                        <div class="phrase">Protecting Democracy</div>
+                        <div class="phrase">Open-source on <a id="phrase-a" href="https://github.com/pgptool-xyz/pgptool-xyz">GitHub</a></div>
+                        <div class="phrase">Implementing <a id="phrase-a" href="https://openpgpjs.org">OpenPGP.js</a></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Have you got feedback/suggestions or found issues? Feel free to e-mail me at <a href="mailto:pgptool.xyz@protonmail.com">pgptool.xyz@protonmail.com</a> (<a href="publickey.pgptool.xyz@protonmail.com-62d5694ee76cd04c5e2d91e3254484b519e2f911.asc">PGP Key</a>).</p>
+                </div>
+            </div>
+            <hr>
+            <div class="anchor-container">
+                <div class="anchors">
+                    <div class="anchor"><a href="generate_rsa_key_pair.html">RSA Key Pair Generation</a></div>
+                    <div class="anchor"><a href="generate_ecc_key_pair.html">ECC Key Pair Generation</a></div>
+                    <div class="anchor"><a href="encrypt.html">Message Encryption ( + Signing )</a></div>
+                    <div class="anchor"><a href="decrypt.html">Message Decryption ( + Verification )</a></div>
+                    <div class="anchor"><a href="sign.html">Message Signing</a></div>
+                    <div class="anchor"><a href="verify.html">Signature Verification</a></div>
+                    <div class="anchor"><a href="revoke_a_key.html">Key Revocation</a></div>
+                </div>
+            </div>
+        </div>
+        <noscript>
+            <div>
+                JavaScript is disabled in your browser. Please, enable it to use this website as it implements the <a href="https://openpgpjs.org">OpenPGP.js library</a>.
+            </div>
+        </noscript>
+        <script type="module" src="./openpgp/dist/openpgp.min.mjs"></script>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>

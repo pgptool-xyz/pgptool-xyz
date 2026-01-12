@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#break {
+    color: red;
+}
+
+#paragraph {
+    color: red;
+}
+
+#incorrectPassphrase {
+    color: red;
+}
+
+#emptyPassphrase {
+    color: red;
+}
+
+#error {
+    color: red;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+textarea {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="password"]{
+    padding: 10px;
+    margin-top: 5px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.required {
+    color: red;
+}
+
+#output {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    border: solid 1px #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Message Encryption ( + Signing )</title>
+        <link rel="stylesheet" href="encrypt.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PGP: Encrypt Messages/Encryption">
+        <meta name="author" content="Anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Message Encryption ( + Signing )</h1>
+            <label for="publicKeyArmmored">Recipient's Public Key <span class="required">*</span></label>
+            <textarea id="publicKeyArmored" rows="10" cols="50" required></textarea><br><br>
+
+            <label for="privateKeyArmored">Your Private Key (to sign the message)</label>
+            <textarea id="privateKeyArmored" rows="10" cols="50"></textarea><br><br>
+
+            <label for="passphrase">Passphrase</label>
+            <input type="password" id="passphrase" name="passphrase">
+
+            <label for="message">Your message <span class="required">*</span></label>
+            <textarea id="message" rows="10" cols="50" required></textarea><br><br>
+    
+            <button id="encryptionButton">Encrypt Message</button>
+            <br id="break" class="hidden">
+            <p id="paragraph" class="hidden">Make sure to fill out all required (*) fields.</p>
+            <p id="incorrectPassphrase" class="hidden">The passphrase is incorrect. Please, try again.</p>
+            <p id="emptyPassphrase" class="hidden">The passphrase is empty. Please, try again.</p>
+            <p id="error" class="hidden"></p>
+
+            <h2>Encrypted Message</h2>
+            <textarea id="output" rows="10" cols="50" readonly></textarea>
+        </div>
+
+        <script type="module" src="./openpgp/dist/openpgp.min.mjs"></script>
+        <script type="module" src="encrypt.js"></script>
+    </body>
+</html>
